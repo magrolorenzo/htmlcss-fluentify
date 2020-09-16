@@ -14,7 +14,7 @@ header{
     background-size: cover;
     position: relative;
 }
-/* header::after{
+header::after{
     content: "";
     display: block;
     width: 100%;
@@ -24,10 +24,16 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-} */
+}
+nav{
+    height: 100px;
+    position: relative;
+    border: 2px solid yellow;
+    z-index: 2;
+}
+
 a{
     text-decoration: none;
-    color: white;
 }
 .container{
         width: 65%;
@@ -41,16 +47,58 @@ a{
     clear: both;
 }
 
+
+
 /* Main Menu */
 .main-menu{
     float:left;
-    background-color: black;
-    z-index: 2;
+    width: 70%;
+    height: 100%;
+    padding-top: 10px;
 }
 .logo-container, .menu, .menu li{
     display: inline-block;
 }
+.logo-container{
+    padding-right: 20px;
+    border: 2px solid lightgreen;
+}
+.logo-container img{
+    height: 40px;
+}
+.menu{
+    vertical-align: bottom;
+    border: 2px solid lightgreen;
+}
+.menu li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    position: relative; /* Aggiunto per impostare su absolute la position della pallina verde*/
+}
+.current-page::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #64DE82;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
 .login-section{
     float: left;
-    background-color: blue;
+    width: 30%;
+    text-align: right;
 }
