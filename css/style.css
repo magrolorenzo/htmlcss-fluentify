@@ -3,3 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+header{
+    height: 600px;
+    color: white;
+    background-image: url('https://www.fluentify.com/home/wp-content/uploads/2020/01/fluentify-cover-privati-1536x872.jpg');
+    background-size: cover;
+    position: relative;
+}
+/* header::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), to(#001A4F));
+    background: linear-gradient(270deg, transparent 0%, #001A4F 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+        width: 65%;
+        height: 100%;
+        margin: auto;
+        border: 2px solid lightgreen;
+}
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Menu */
+.main-menu{
+    float:left;
+    background-color: black;
+    z-index: 2;
+}
+.logo-container, .menu, .menu li{
+    display: inline-block;
+}
+.login-section{
+    float: left;
+    background-color: blue;
+}
