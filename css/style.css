@@ -165,3 +165,43 @@ a{
     line-height: 25px;
 }
 /*************************     Introduction     *************************/
+#introduction .container{
+    padding: 160px 0;
+}
+#introduction .container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.laptop-image, .lections-description{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.lections-description h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-bottom: 50px;
+    color:#727272;
+}
+.lections-description h1 span{
+    color: #64DE82;
+}
+.lections-description h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #001A4F;
+}
+.lections-description p{
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    color:#727272;
+    border-bottom: 1px solid #dee2e6;
+}
+/*************************     Introduction     *************************/
