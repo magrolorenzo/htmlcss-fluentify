@@ -12,6 +12,7 @@ header{
     color: white;
     background-image: url('https://www.fluentify.com/home/wp-content/uploads/2020/01/fluentify-cover-privati-1536x872.jpg');
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 header::after{
@@ -28,10 +29,8 @@ header::after{
 nav{
     height: 100px;
     position: relative;
-    border: 2px solid yellow;
     z-index: 2;
 }
-
 a{
     text-decoration: none;
 }
@@ -39,36 +38,60 @@ a{
         width: 65%;
         height: 100%;
         margin: auto;
-        border: 2px solid lightgreen;
+        /* border: 2px solid lightgreen; */
 }
 .container::after{
     content: "";
     display: table;
     clear: both;
 }
+.button{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #64DE82;
+    border: 1px solid #64DE82;
+    border-radius: 5px;
+    color: #337142;
+    padding:0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.button:hover {
+    background-color: rgba(100,222,130,0.7);
+    border-color: rgba(100,222,130,0.7);
+    color: white;
+}
 
+.button.button-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
 
+.button.button-secondary:hover {
+    color: #001A4F;
+    background-color: white;
+}
 
 /* Main Menu */
 .main-menu{
     float:left;
     width: 70%;
     height: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .logo-container, .menu, .menu li{
     display: inline-block;
 }
 .logo-container{
     padding-right: 20px;
-    border: 2px solid lightgreen;
 }
 .logo-container img{
     height: 40px;
 }
 .menu{
     vertical-align: bottom;
-    border: 2px solid lightgreen;
 }
 .menu li a{
     display: inline-block;
@@ -93,12 +116,19 @@ a{
     left: 0;
     z-index: -1;
 }
-
-
-
-
 .login-section{
     float: left;
     width: 30%;
+    height: 100%;
+    padding-top: 20px;
     text-align: right;
+}
+.login-section .button{
+    margin: 0 8px;
+}
+.login-section a:last-child {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
