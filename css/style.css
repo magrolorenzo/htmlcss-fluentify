@@ -8,7 +8,6 @@ body{
     font-size: 18px;
 }
 header{
-    height: 600px;
     color: white;
     background-image: url('https://www.fluentify.com/home/wp-content/uploads/2020/01/fluentify-cover-privati-1536x872.jpg');
     background-size: cover;
@@ -26,10 +25,11 @@ header::after{
     top: 0;
     left: 0;
 }
-nav{
-    height: 100px;
+#top-bar{
+    /* height: 100px; */
     position: relative;
     z-index: 2;
+    padding-bottom: 20px;
 }
 a{
     text-decoration: none;
@@ -56,6 +56,7 @@ a{
     padding:0 25px;
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: 500;
 }
 .button:hover {
     background-color: rgba(100,222,130,0.7);
@@ -74,7 +75,7 @@ a{
     background-color: white;
 }
 
-/* Main Menu */
+/*************************     Main Menu     *************************/
 .main-menu{
     float:left;
     width: 70%;
@@ -100,7 +101,7 @@ a{
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     font-weight: 500;
     position: relative; /* Aggiunto per impostare su absolute la position della pallina verde*/
@@ -124,11 +125,43 @@ a{
     text-align: right;
 }
 .login-section .button{
-    margin: 0 8px;
+    margin: 0 5px;
+}
+.login-section .button-secondary i{
+    font-size: 18px;
 }
 .login-section a:last-child {
     color: white;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
+    margin-left: 10px;
 }
+
+/*************************     Jumbotron     *************************/
+#jumbotron{
+    /* height: 500px; */
+    position: relative;
+    z-index: 2;
+}
+#jumbotron .container{
+    padding: 120px 0 200px 0;
+}
+#jumbotron h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+#jumbotron h1{
+   font-family: 'Poppins', sans-serif;
+   font-size: 50px;
+   font-weight: 500;
+}
+#jumbotron p{
+    width: 60%;
+    margin: 15px 0;
+    line-height: 25px;
+}
+/*************************     Introduction     *************************/
