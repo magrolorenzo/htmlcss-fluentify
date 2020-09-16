@@ -230,5 +230,36 @@ a{
 /*************************     Mobile     *************************/
 .mobile{
     background-color: #001A4F;
-    height: 320px;
+    color: white;
+    /* height: 320px; */
+}
+.mobile .container{
+    content: "";
+    display: table;
+    clear: both;
+}
+.mobile-desc, .mobile-img{
+    float: left;
+    width: 50%;
+}
+.mobile-desc{
+    padding-top: 80px;
+}
+.mobile-desc h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    margin-bottom: 12px;
+}
+.mobile-desc p{
+    line-height: 27px;
+    margin-bottom: 17px;
+}
+.mobile-desc a{
+    font-weight: 700;
+    color: #64DE82;
+}
+.mobile-img {
+    text-align: center;
 }
