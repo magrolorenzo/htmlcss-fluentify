@@ -36,14 +36,16 @@ a{
 }
 .blue-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 26px;
+    font-size: 27px;
     font-weight: 500;
+    line-height: 32px;
     margin-bottom: 8px;
     color: #001A4F;
 }
 .grey-parag{
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 27px;
     padding-bottom: 25px;
     margin-bottom: 25px;
     color:#727272;
@@ -92,9 +94,16 @@ a{
 /*************************     Main Menu     *************************/
 .main-menu{
     float:left;
-    width: 70%;
+    width: 65%;
     height: 100%;
     padding-top: 15px;
+}
+.login-section{
+    float: left;
+    width: 35%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: right;
 }
 .logo-container, .menu, .menu li{
     display: inline-block;
@@ -131,13 +140,6 @@ a{
     top: 8px;
     left: 0;
     z-index: -1;
-}
-.login-section{
-    float: left;
-    width: 30%;
-    height: 100%;
-    padding-top: 20px;
-    text-align: right;
 }
 .login-section .button-secondary i{
     font-size: 18px;
@@ -192,9 +194,9 @@ a{
 }
 .lections-description h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 47px;
     margin-bottom: 50px;
     color:#727272;
 }
@@ -233,7 +235,7 @@ a{
     color: white;
     /* height: 320px; */
 }
-.mobile .container{
+.mobile .container::after{
     content: "";
     display: table;
     clear: both;
@@ -262,4 +264,35 @@ a{
 }
 .mobile-img {
     text-align: center;
+    padding-left: 120px;
+}
+#phone-image{
+    display: block;
+
+}
+/*************************     Secure Platform     *************************/
+.secure-platform .container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.secure-platform .container{
+    padding: 45px 0;
+}
+.monitor-image, .secure-desc{
+    float: left;
+    width: 50%;
+}
+.secure-desc h3{
+    margin-bottom: 27px;
+}
+.secure-desc p{
+    margin-bottom: 18px;
+}
+.monitor-image{
+    padding-left: 80px;
+}
+.secure-desc{
+    padding-top: 120px;
+    padding-left: 30px;
 }
