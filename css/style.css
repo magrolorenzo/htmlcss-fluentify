@@ -324,3 +324,96 @@ a{
     margin-bottom: 18px;
 }
 /*************************     Footer     *************************/
+footer{
+    background-color: #001A4F;
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 54px 15px;
+}
+footer .container{
+    width: 83%;
+}
+.top-row::after, .bottom-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.bottom-row{
+    height: 80px;
+}
+.company{
+    float: left;
+    width: 15%;
+    padding-right: 15px;
+}
+.company img{
+    padding-bottom: 30px;
+}
+.footer-links{
+    float: left;
+    width: 85%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.footer-links::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.links-block{
+    float: left;
+    width: calc(100% / 6);
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+footer ul{
+    list-style: none;
+}
+.links-block li{
+    margin-bottom: 5px;
+}
+footer a{
+    color: #dee2e6;
+    font-weight: 400;
+}
+footer a:hover{
+    color: #64DE82;
+}
+.links-block ul li:first-of-type{
+    margin-bottom: 12px;
+}
+.links-block ul li:first-of-type a{
+    color: white;
+}
+.links-block ul li:first-of-type a:hover{
+    color:#dee2e6;
+}
+.social, .policy{
+    display: inline-block;
+}
+.social{
+    float: left;
+    width: 15%;
+}
+.policy{
+    float: left;
+    width: 85%;
+    padding-top: 50px;
+}
+.mail{
+    margin-bottom: 18px;
+}
+.social-icons a{
+    display: inline-block;
+    font-size: 18px;
+    color: #64DE82;
+    margin-right: 18px;
+}
+.social-icons a:hover{
+    opacity: 0.6;
+}
+.policy li{
+    display: inline-block;
+    margin-right: 36px;
+}
