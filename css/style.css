@@ -296,3 +296,31 @@ a{
     padding-top: 120px;
     padding-left: 30px;
 }
+/*************************     Buy a plan     *************************/
+.buy-a-plan{
+    background-color: #294681;
+    color: white;
+}
+.buy-a-plan .container{
+    padding:54px 0;
+}
+.buy-a-plan .container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.buy-a-plan h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    margin-bottom: 12px;
+}
+.buy-a-plan .container div{
+    float: left;
+    width: 50%;
+}
+.buy-a-plan .container p{
+    margin-bottom: 18px;
+}
+/*************************     Footer     *************************/
